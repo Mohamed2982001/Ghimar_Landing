@@ -5,161 +5,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>غمار | Ghimar</title>
     <meta name="description" content="تطبيقات غمار لخدمات غسيل الملابس.">
-    <!-- Google Fonts: Tajawal -->
+    
+    <!-- Google Fonts: IBM Plex Sans Arabic -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
-    <!-- BoxIcons for elegant icons -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- BoxIcons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
-    <style>
-        .test-accounts {
-            background: #f8f9fa;
-            border-radius: 12px;
-            padding: 20px;
-            margin-top: 20px;
-            border: 1px solid #e9ecef;
-            text-align: right;
-        }
-        .test-accounts h4 {
-            margin-top: 0;
-            color: #2c3e50;
-            font-size: 1.2rem;
-            margin-bottom: 15px;
-        }
-        .account-box {
-            background: white;
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 10px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-        .account-box strong {
-            color: #058f8b;
-        }
-        .account-box p {
-            margin: 5px 0;
-            font-size: 1.1rem;
-            color: #333;
-        }
-        .logo img {
-            width: 40px;
-            height: auto;
-            margin-left: 10px;
-        }
-        .hero-text h1 span {
-            color: #058f8b;
-        }
-    </style>
 </head>
 <body>
 
-    <!-- Background Animated Shapes -->
-    <div class="bg-shape shape-1"></div>
-    <div class="bg-shape shape-2"></div>
+    <!-- Animated Bubbles Background -->
+    <div class="bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
 
-    <header>
-        <div class="container header-content">
-            <div class="logo">
-                <img src="assets/logo.png" alt="Ghimar Logo">
-                <span>غمار</span>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="brand">
+                <img src="assets/logo.png" alt="غمار" class="logo-img">
+                <span class="brand-name">غمار</span>
             </div>
-            <a href="https://groups.google.com/g/ghemarapp" target="_blank" class="btn-group">
-                <i class='bx bxl-google'></i> انضم لمجموعة الاختبار
+            <a href="https://groups.google.com/g/ghemarapp" target="_blank" class="nav-btn">
+                <i class='bx bx-user-plus'></i> انضم للنسخة التجريبية
             </a>
         </div>
-    </header>
+    </nav>
 
-    <main class="container hero-section">
-        <div class="hero-text">
-            <div class="badge">النسخة التجريبية (Beta)</div>
-            <h1>طريقك الأسهل لغسيل <span>ملابسك</span></h1>
-            <p>
-                حمل تطبيقات غمار الآن وانضم لفريق المختبرين لمساعدتنا في تحسين التجربة. 
-            </p>
+    <!-- Main Hero -->
+    <main class="hero">
+        <div class="container hero-grid">
             
-            <div class="steps-container">
-                <!-- STEP 1: Join Group (Massive Button) -->
-                <div class="step-card highlight-step">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h3>أولاً: انضم لمجموعة الاختبار</h3>
-                        <p>يجب الانضمام للمجموعة بحساب جوجل لتتمكن من تحميل التطبيقات.</p>
-                        <a href="https://groups.google.com/g/ghemarapp" target="_blank" class="btn-massive-join">
-                            <i class='bx bxl-google'></i> انضم للمجموعة الآن
+            <div class="hero-content">
+                <div class="badge-tag">
+                    <i class='bx bx-party'></i> إطلاق النسخة التجريبية المفتوحة
+                </div>
+                
+                <h1 class="hero-title">
+                    نعتني بملابسك <br>
+                    <span class="text-gradient">أكثر مما تتخيل!</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    غمار هو رفيقك المثالي لخدمات غسيل الملابس الاحترافية. انضم إلينا الآن كمختبر للنسخة التجريبية وساعدنا في صياغة مستقبل العناية بالملابس.
+                </p>
+
+                <div class="action-cards">
+                    
+                    <!-- Step 1 -->
+                    <div class="action-card step-card highlight">
+                        <div class="step-icon">1</div>
+                        <div class="card-text">
+                            <h3>المجموعة التجريبية</h3>
+                            <p>يجب الانضمام أولاً لنتمكن من تفعيل حسابك كـ "مختبر".</p>
+                        </div>
+                        <a href="https://groups.google.com/g/ghemarapp" target="_blank" class="primary-btn">
+                            <i class='bx bxl-google'></i> انضم الآن
                         </a>
                     </div>
-                </div>
 
-                <!-- STEP 2: Download Apps -->
-                <div class="step-card">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h3>ثانياً: حمل التطبيقات</h3>
-                        <div class="app-links-container">
-                            <!-- Customer App -->
-                            <div class="app-card">
-                                <div class="app-card-header">
-                                    <i class='bx bx-user'></i>
-                                    <h4>تطبيق العميل</h4>
-                                </div>
-                                <div class="store-buttons">
-                                    <a href="https://play.google.com/store/apps/details?id=com.ghimar.customer" target="_blank" class="store-btn android">
-                                        <i class='bx bxl-play-store'></i> Google Play
-                                    </a>
-                                </div>
-                            </div>
+                    <!-- Step 2 -->
+                    <div class="action-card step-card">
+                        <div class="step-icon">2</div>
+                        <div class="card-text">
+                            <h3>حمّل التطبيقات</h3>
+                            <p>تطبيقات العميل والسائق متوفرة حصرياً للمختبرين على Google Play.</p>
+                        </div>
+                        <div class="download-buttons">
+                            <a href="https://play.google.com/store/apps/details?id=com.ghimar.customer" target="_blank" class="store-btn">
+                                <i class='bx bxl-play-store'></i> تطبيق العميل
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.ghimar.driver" target="_blank" class="store-btn driver-btn">
+                                <i class='bx bxl-play-store'></i> تطبيق السائق
+                            </a>
+                        </div>
+                    </div>
 
-                            <!-- Driver App -->
-                            <div class="app-card">
-                                <div class="app-card-header">
-                                    <i class='bx bx-steering'></i>
-                                    <h4>تطبيق السائق</h4>
+                    <!-- Step 3 -->
+                    <div class="action-card step-card info-card">
+                        <div class="step-icon"><i class='bx bx-key'></i></div>
+                        <div class="card-text">
+                            <h3>بيانات الدخول التجريبية</h3>
+                            <p>لست بحاجة لإنشاء حساب جديد، استخدم الحسابات التالية لتجربة التطبيق مباشرة.</p>
+                            
+                            <div class="credentials-grid">
+                                <div class="cred-box">
+                                    <span class="cred-title">حساب العميل</span>
+                                    <div class="cred-item"><span>الجوال:</span> <strong dir="ltr">+966 562430673</strong></div>
+                                    <div class="cred-item"><span>الرمز:</span> <strong>111111</strong></div>
                                 </div>
-                                <div class="store-buttons">
-                                    <a href="https://play.google.com/store/apps/details?id=com.ghimar.driver" target="_blank" class="store-btn android">
-                                        <i class='bx bxl-play-store'></i> Google Play
-                                    </a>
+                                <div class="cred-box">
+                                    <span class="cred-title">حساب السائق</span>
+                                    <div class="cred-item"><span>الجوال:</span> <strong dir="ltr">+966 500000002</strong></div>
+                                    <div class="cred-item"><span>الرمز:</span> <strong>111111</strong></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- STEP 3: Test Accounts -->
-                <div class="step-card">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h3>ثالثاً: بيانات الدخول التجريبية</h3>
-                        <div class="test-accounts">
-                            <div class="account-box">
-                                <h4><i class='bx bx-user'></i> حساب العميل التجريبي</h4>
-                                <p>رقم الهاتف: <strong dir="ltr">+966 562430673</strong></p>
-                                <p>رمز التحقق (OTP): <strong>111111</strong></p>
-                            </div>
-                            <div class="account-box">
-                                <h4><i class='bx bx-steering'></i> حساب السائق التجريبي</h4>
-                                <p>رقم الهاتف: <strong dir="ltr">+966 500000002</strong></p>
-                                <p>رمز التحقق (OTP): <strong>111111</strong></p>
-                            </div>
-                        </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="visual-wrapper">
+                    <!-- A decorative wrapper around the logo -->
+                    <div class="glass-orb"></div>
+                    <img src="assets/logo.png" alt="Ghimar App" class="showcase-img">
+                    
+                    <div class="floating-card fl-1">
+                        <i class='bx bx-check-shield'></i> عناية فائقة
+                    </div>
+                    <div class="floating-card fl-2">
+                        <i class='bx bx-time-five'></i> استلام سريع
                     </div>
                 </div>
-
             </div>
-        </div>
 
-        <div class="hero-image">
-            <div class="featured-banner">
-                <img src="assets/logo.png" alt="Ghimar Logo" style="max-width: 300px; margin: 0 auto; display: block; border-radius: 20px;">
-            </div>
-            <div class="glow-effect"></div>
         </div>
     </main>
 
-    <footer>
+    <footer class="footer">
         <div class="container footer-content">
-            <p>&copy; 2026 Ghimar. جميع الحقوق محفوظة.</p>
+            <div class="brand-footer">
+                <img src="assets/logo.png" alt="غمار" class="logo-img-small">
+                <span>غمار | لخدمات غسيل الملابس</span>
+            </div>
+            <p>&copy; 2026 جميع الحقوق محفوظة لتطبيق غمار.</p>
         </div>
     </footer>
 
